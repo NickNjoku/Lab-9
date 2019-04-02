@@ -34,6 +34,7 @@
          * This lets our recursion know when to stop.
          */
         //TODO
+        return 0;
 
         if(value==1)
         {
@@ -41,7 +42,7 @@
         }
         else
         {
-            return value * factorial(n-1);
+            return value * factorial(value-1);
         }
 
 
@@ -76,7 +77,8 @@
     public int fibonacci(int n)
     {
         //TODO
-
+        return 0;
+        
         if(n <= 1)
         {
             return n;
@@ -119,11 +121,16 @@
         public Tree(int value)
         {
     	    //TODO
+            Tree root = new Tree(value);
+
+
         }
     
         public int getValue()
         {
     	    //TODO
+
+
         }
     
         public ArrayList<Tree> getChildren()
@@ -134,6 +141,10 @@
         public void add(Tree child)
         {
     	    //TODO
+
+            
+
+
         }
     }
     
