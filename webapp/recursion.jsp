@@ -34,7 +34,7 @@
          * This lets our recursion know when to stop.
          */
         //TODO
-        return 0;
+        
 
         if(value==1)
         {
@@ -45,6 +45,7 @@
             return value * factorial(value-1);
         }
 
+        return 0;
 
         /*
          * Here is the recursive statement. The function calls itself when the 
@@ -77,7 +78,7 @@
     public int fibonacci(int n)
     {
         //TODO
-        return 0;
+        
         
         if(n <= 1)
         {
@@ -88,6 +89,8 @@
         {
             return fibonacci(n-1) + fibonacci(n-2);
         }
+
+        return 0;
     }
 
     
