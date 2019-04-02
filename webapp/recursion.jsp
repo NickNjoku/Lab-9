@@ -124,7 +124,10 @@
         public Tree(int value)
         {
     	    //TODO
+            this.value = value;
+            children = new ArrayList<Tree>();
             Tree root = new Tree(value);
+
 
 
         }
@@ -132,7 +135,8 @@
         public int getValue()
         {
     	    //TODO
-            return 0;
+            return value;
+            
 
         }
     
