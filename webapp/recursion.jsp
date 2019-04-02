@@ -129,13 +129,15 @@
         public int getValue()
         {
     	    //TODO
-
+            return 0;
 
         }
     
         public ArrayList<Tree> getChildren()
         {
     	    //TODO
+
+            return null;
         }
     
         public void add(Tree child)
