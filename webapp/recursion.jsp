@@ -35,6 +35,15 @@
          */
         //TODO
 
+        if(value==1)
+        {
+            return 1;
+        }
+        else
+        {
+            return value * factorial(n-1);
+        }
+
 
         /*
          * Here is the recursive statement. The function calls itself when the 
