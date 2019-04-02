@@ -35,17 +35,11 @@
          */
         //TODO
         
-
         if(value==1)
         {
             return 1;
         }
-        else
-        {
-            return value * factorial(value-1);
-        }
 
-        
 
         /*
          * Here is the recursive statement. The function calls itself when the 
@@ -56,6 +50,11 @@
          * By doing this, we break up the equation n! into n! = n * (n-1)!.
          */
         //TODO
+
+        else
+        {
+            return value * factorial(value-1);
+        }
 
     }
 
@@ -78,8 +77,7 @@
     public int fibonacci(int n)
     {
         //TODO
-        
-        
+          
         if(n <= 1)
         {
             return n;
@@ -126,10 +124,8 @@
     	    //TODO
             this.value = value;
             children = new ArrayList<Tree>();
-            Tree root = new Tree(value);
-
-
-
+            //Tree root = new Tree(value);
+        
         }
     
         public int getValue()
@@ -143,15 +139,14 @@
         public ArrayList<Tree> getChildren()
         {
     	    //TODO
+            return children;
 
-            return null;
         }
     
         public void add(Tree child)
         {
     	    //TODO
-
-            
+            children.add(child);
 
 
         }
@@ -188,10 +183,17 @@
         if (height == 1) 
         {
     	    //TODO
+            return 1;
+        }
+
+        else
+        {
+            int levelNumNodes = (int)Math.pow(branchingFactor, height -1);
+            return nnaryTreeSize(branchingFactor, height - 1) + levelNumNodes;
         }
         
-    	//TODO
-        return 0;
+    	
+        
     }
 
     /** **********************************************************************
