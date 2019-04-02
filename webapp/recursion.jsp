@@ -45,7 +45,7 @@
             return value * factorial(value-1);
         }
 
-        return 0;
+        
 
         /*
          * Here is the recursive statement. The function calls itself when the 
@@ -90,7 +90,7 @@
             return fibonacci(n-1) + fibonacci(n-2);
         }
 
-        return 0;
+        
     }
 
     
@@ -132,7 +132,7 @@
         public int getValue()
         {
     	    //TODO
-            return 0;
+            return null;
 
         }
     
@@ -187,6 +187,7 @@
         }
         
     	//TODO
+        return null;
     }
 
     /** **********************************************************************
@@ -200,6 +201,8 @@
     public int treeSum(Tree tree)
     {
     	//TODO
+
+        return null;
     }
     
     /** **********************************************************************
