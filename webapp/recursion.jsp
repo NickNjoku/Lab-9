@@ -124,7 +124,7 @@
     	    //TODO
             this.value = value;
             children = new ArrayList<Tree>();
-            //Tree root = new Tree(value);
+            
         
         }
     
@@ -208,7 +208,14 @@
     {
     	//TODO
 
-        return 0;
+        int totalValue = tree.getValue();
+        for(Tree child : tree.getChildren())
+        {
+            totalValue += treeSum(child);
+        }
+
+
+        return totalValue;
     }
     
     /** **********************************************************************
